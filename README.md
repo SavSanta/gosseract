@@ -8,7 +8,7 @@ Golang OCR package, by using Tesseract C++ library.
 
 # OCR Server
 
-Do you just want OCR server, or see the working example of this package? Yes, there is already-made server application, which is seriously easy to deploy!
+Do you just wantan OCR server, or to see a working example of this package? Yes, there is a ready-made server application, which is seriously easy to deploy!
 
 👉 https://github.com/otiai10/ocrserver
 
@@ -34,27 +34,27 @@ func main() {
 
 # Install
 
-1. [tesseract-ocr](https://github.com/tesseract-ocr/tesseract/wiki), including library and headers
+1. [tesseract-ocr](https://github.com/tesseract-ocr/tesseract/wiki), including the library and headers
 2. `go get -t github.com/otiai10/gosseract`
 
-Check [Dockerfile](https://github.com/otiai10/gosseract/blob/master/Dockerfile) for more detail of installation, or you can just try by `docker run -it --rm otiai10/gosseract`.
+See the [Dockerfile](https://github.com/otiai10/gosseract/blob/master/Dockerfile) for more details of installation, or you can simply try by `docker run -it --rm otiai10/gosseract`.
 
 # Test
 
-In case you have [tesseract-ocr](https://github.com/tesseract-ocr/tesseract/wiki) on your local, you can just hit
+In case you have [tesseract-ocr](https://github.com/tesseract-ocr/tesseract/wiki) installed on your local machine, you may just execute:
 
 ```
 % go test .
 ```
 
-Otherwise, if you **DON'T** want to install tesseract-ocr on your local, kick `./test/runtime` which is using Docker and Vagrant to test the source code on some runtimes.
+Otherwise, if you **DON'T** want to install tesseract-ocr on your local machine, execute `./test/runtime` which uses Docker and Vagrant to test the source code on some runtimes.
 
 ```
 % ./test/runtime --driver docker
 % ./test/runtime --driver vagrant
 ```
 
-Check [./test/runtimes](https://github.com/otiai10/gosseract/tree/master/test/runtimes) for more information about runtime tests.
+See [./test/runtimes](https://github.com/otiai10/gosseract/tree/master/test/runtimes) for more information about runtime tests.
 
 # Issues
 
